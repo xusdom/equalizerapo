@@ -1,0 +1,11 @@
+{
+  "name": "equalizerapo",
+  "version-string": "4.6.0",
+  "dependencies": [
+    "nsis",
+    "libfft3",
+    "qt5",
+    "muparser"
+  ]
+
+}
