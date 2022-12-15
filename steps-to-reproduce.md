@@ -233,6 +233,12 @@ If your port is not listed, please open an issue at and/or consider making a pul
 Fehler	LNK1181	Eingabedatei "libsndfile-1.lib" kann nicht geöffnet werden.	EqualizerAPO	E:\c-cpp\equalizerapo\EqualizerAPO\LINK	1
 
 ```
-
+ * fix libsndfile-1.lib to sndfile.lib (as found in vcpkg installed/windows-x64/...) in EqualizerAPO Project -> Linker/Zusätzliche Abhängigkeiten (first reset to Debug / x86)
+ * build
+ ```
+ > msbuild /p:PreferredToolArchitecture=x64 /p:configuration=MinSizeRel muparserx.sln
+  Fehler	LNK1181	Eingabedatei "libfftw3f-3.lib" kann nicht geöffnet werden.	EqualizerAPO	E:\c-cpp\equalizerapo\EqualizerAPO\LINK	1
+```
+  * same here...change to fftw3f.lib
 
 
